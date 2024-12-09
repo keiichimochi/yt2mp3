@@ -1,34 +1,44 @@
-# YouTube to MP3 Converter ナリ！
+# YouTube to MP3/MP4 Converter ナリ！
 
-YouTubeの動画をMP3形式に変換するWebアプリケーションナリ！
+YouTubeの動画をMP3やMP4形式でダウンロードできるStreamlitアプリケーションナリ！
+
+## 特徴
+
+- 最大5つまでの動画を一度にダウンロード可能
+- MP3（音声のみ）とMP4（動画）の両方に対応
+- ダウンロード先フォルダを自由に指定可能
+- シンプルで使いやすいUI
 
 ## インストール方法
 
 ```bash
 # リポジトリをクローン
-git clone https://github.com/keiichimochi/yt2mp3.git
+git clone https://github.com/yourusername/yt2mp3.git
 cd yt2mp3
 
-# 仮想環境を作成して有効化
-uv venv venv
-.\venv\Scripts\activate
-
-# 依存関係をインストール
-uv pip install -r requirements.txt
+# 必要なパッケージをインストール
+pip install -r requirements.txt
 ```
 
 ## 使い方
 
-1. 以下のコマンドでアプリを起動するナリ：
-
+1. Streamlitアプリを起動:
 ```bash
 streamlit run yt2mp3.py
 ```
 
-2. ブラウザが開いたらYouTubeのURLを入力して「MP3に変換するナリ」ボタンを押すナリ！
-3. 変換されたMP3ファイルは`downloads`フォルダに保存されるナリ！
+2. ブラウザで開いたアプリで以下の操作を行う:
+   - ダウンロード先フォルダを指定（任意）
+   - YouTubeのURLを入力（最大5つまで）
+   - 「MP3に変換するナリ」または「MP4に変換するナリ」ボタンをクリック
 
 ## 注意事項
 
-- このアプリは個人使用目的のみで使用するナリ！
-- 著作権を尊重するナリ！ 
+- YouTubeの利用規約に従ってご利用ください
+- 著作権を遵守してください
+- 個人使用目的でのみご利用ください
+
+## 必要なもの
+
+- Python 3.6以上
+- FFmpeg（動画/音声変換に必要） 
